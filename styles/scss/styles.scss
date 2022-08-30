@@ -1,0 +1,26 @@
+body {
+    background-color: #161222;
+}
+
+.returnHome {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 100px;
+    width: min-content;
+}
+
+.returnHome a {
+    color: white;
+    text-decoration: none;
+}
+
+.type_new_post {
+    width: 100%;
+}
+
+.col-md {
+    hr {
+        width: 50%;
+    }
+}
