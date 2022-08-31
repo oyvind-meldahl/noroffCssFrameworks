@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="styles/css/styles.css">
     <title>villainBook - login</title>
 </head>
-<body>
-    <div class="container" id="top">
-        <nav class="navbar navbar-expand-md bg-light my-4 shadow rounded">
+<body class="bg-primary bg-gradient">
+    <div class="container d-flex flex-column min-vh-100" id="top">
+        <nav class="navbar navbar-expand-md bg-light my-4 shadow rounded-3">
             <div class="container-fluid">
                 <a href="index.html" class="navbar-brand fs-2">
                     <img src="img/395397-200.png" alt="" width="75" height="75" class="d-inline-block align-text-center">
@@ -32,32 +32,45 @@
             </div>
         </nav>
         <div class="row mb-4 justify-content-center searchbar">
-            <div class="col-8 col-md-6 bg-white text-center p-3 shadow rounded">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+            <div class="col-8 col-md-6 bg-white text-center p-3 shadow rounded-3">
+                <form class="d-flex" role="search" action="/index.html" >
+                    <input class="form-control me-2" type="search" placeholder="search" aria-label="Search" required>
+                    <button class="btn btn-lg btn-primary bg-success" type="submit">Search</button>
                   </form>
             </div>
         </div>
         <main>
             <div class="row">
-                <div class="col-md-6"></div>
-                <div class="col-md-6"></div>
-                <div class="bttom" id="bottom"></div>
+                <div class="col-12">
+                    <div class="col w-50 bg-white mx-auto rounded-3 p-3 ">
+                        <div class="login text-center fs-2 fw-bold mb-3">please sign in</div>
+                        <form action="/profile.html">
+                            <label for="emailInput" class="form-label">Email adress</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="yourmail@mail.com" required autofocus>
+                            
+                            <label for="passwordInput" class="form-label mt-3">Password</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="your password">
+
+                            <button class="btn btn-lg btn-primary mt-5 w-100 bg-success">Sign In</button>
+
+
+                        </form>
+                    </div>
+                </div>
+               
             </div>
             
         </main>
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-muted">© 2022 villainBook, EVIL CORP inc.</p>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
+            <p class="col-md-4 mb-0 text-muted">© 2022 villainBook</p>
             <ul class="nav col-md-4 justify-content-end">
               <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Profile</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQ</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+              <li class="nav-item"><a href="profile.html" class="nav-link px-2 text-muted">Profile</a></li>
+              <li class="nav-item"><a href="login.html" class="nav-link px-2 text-muted">Login</a></li>
+          
             </ul>
           </footer>
     </div>
-    <div class="returnHome p-4 m-5 text-bg-dark"><a href="#top"> UP! </a></div>
+    
 </body>
 </html>

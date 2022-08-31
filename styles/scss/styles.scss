@@ -1,26 +1,16 @@
+$primary: #251e3a;
+$secondary: black;
+$white: white;
+$gradient: #161222;
+$gradient: linear-gradient(180deg, rgba(black, 0), rgba(black, 0.9));
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 body {
-    background-color: #161222;
+    background-attachment: fixed;
 }
 
-.returnHome {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border-radius: 100px;
-    width: min-content;
-}
-
-.returnHome a {
-    color: white;
-    text-decoration: none;
-}
-
-.type_new_post {
-    width: 100%;
-}
-
-.col-md {
-    hr {
-        width: 50%;
-    }
+.profile-px {
+    height: 300px;
+    object-fit: cover;
 }
