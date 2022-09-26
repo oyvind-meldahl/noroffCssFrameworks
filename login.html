@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script defer src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/search.js"></script>
+    <link rel="stylesheet" href="/styles/css/styles.css">
+    <title>villainBook - login</title>
+</head>
+<body class="bg-primary bg-gradient">
+    <div class="container d-flex flex-column min-vh-100" id="top">
+        <nav class="navbar navbar-expand-md bg-light my-4 rounded-3">
+            <div class="container-fluid">
+                <a href="/index.html" class="navbar-brand fs-2">
+                    <img src="/img/395397-200.png" alt="" width="75" height="75" class="d-inline-block align-text-center">
+                    villainBook
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto text-center fs-4">
+                        <a class="nav-link px-md-3" href="/index.html">home</a>
+                        <a class="nav-link px-md-3 searchbutton" href="#">search</a>
+                        <a class="nav-link px-md-3" href="/profile.html">profile</a>
+                        <a class="nav-link px-md-3 active" href="/login.html">login</a>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+        <div class="row mb-4 justify-content-center searchbar">
+            <div class="col-8 col-md-6 bg-colourless text-center p-3 rounded-3">
+                <form class="d-flex" role="search" action="/" >
+                    <input class="form-control me-2" type="search" placeholder="search" aria-label="Search" required>
+                    <button class="btn btn-lg btn-primary bg-success" type="submit">Search</button>
+                  </form>
+            </div>
+        </div>
+        <main>
+            <div class="row">
+                <div class="col-12">
+                    <div class="col w-50 bg-colourless mx-auto rounded-3 p-3">
+                        <div class="login text-center fs-2 fw-bold mb-3">please sign in</div>
+                        <form action="/profile.html">
+                            <label for="emailInput" class="form-label">Email adress</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="yourmail@mail.com" required autofocus>
+                            <label for="passwordInput" class="form-label mt-3">Password</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="your password" required>
+                            <button class="btn btn-lg btn-primary mt-5 w-100 bg-success">Sign In</button>
+                        </form>
+                </div>
+                </div>
+            </div>
+        </main>
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-auto">
+            <p class="col-md-4 mb-0 text-muted">© 2022 villainBook</p>
+            <div class="nav col-md-4 justify-content-end">
+              <div class="nav">
+            <ul class="d-inline-flex list-unstyled">
+              <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="/profile.html" class="nav-link px-2 text-muted">Profile</a></li>
+              <li class="nav-item"><a href="/login.html" class="nav-link px-2 text-muted">Login</a></li>
+            </ul>
+          </div>
+          </div>
+          </footer>
+    </div>
+</body>
+</html>
